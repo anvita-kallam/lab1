@@ -91,33 +91,33 @@ st.write("But don't worry! This simple quiz will help you (yes you) finally deci
 # Question 1
 #NEW
 q1 = st.radio(
-    "1. What's your favorite type of problem to solve?",
+    "Q1. What's your favorite type of problem to solve?",
     ["Coding puzzles 💻", "Designing things that fly ✈️", "Understanding the human body 🧬", "Building bridges & skyscrapers 🏗️"]
 )
 
 # Question 2
 #NEW
 q2 = st.multiselect(
-    "2. Which of these subjects do you enjoy the most? (Pick all that apply)",
+    "Q2. Which of these subjects do you enjoy the most? (Pick all that apply)",
     ["Math ➗", "Physics ⚛️", "Biology 🧪", "Art/Design 🎨", "Economics 💰"]
 )
 
 # Question 3
 #NEW
 q3 = st.number_input(
-    "3. How many hours per week would you ideally spend coding?",
+    "Q3. How many hours per week would you ideally spend coding?",
     min_value=0, max_value=60, value=10
 )
 
 # Question 4
 #NEW
 q4 = st.slider(
-    "4. How much do you enjoy teamwork vs. solo work? (0 = solo, 10 = teamwork)",
+    "Q4. How much do you enjoy teamwork vs. solo work? (0 = solo, 10 = teamwork)",
     min_value=0, max_value=10, value=5
 )
 
 # Question 5
-st.write("5. Which campus spot would you hang out at the most?")
+st.write("Q5. Which campus spot would you hang out at the most?")
 col1, col2, col3 = st.columns(3)
 
 with col1:
