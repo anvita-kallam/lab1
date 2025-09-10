@@ -83,35 +83,39 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-st.title("What Georgia Tech Major Should You Study? 🐝🎓")
+st.title("🐝🎓 What Georgia Tech Major Should You Study?")
 st.write("Georgia Tech offers 35 undergraduate majors across its six colleges: Business, Computing, Design, Engineering, Liberal Arts, and Sciences. With this much choice, it's extremely difficult for students to narrow down what major is best for them.")
 st.write("But don't worry! This simple quiz will help you (yes you) finally decide what you want to study!")
 
-# Question 1 - st.radio (#NEW)
+# Question 1
+#NEW
 q1 = st.radio(
     "1. What's your favorite type of problem to solve?",
     ["Coding puzzles 💻", "Designing things that fly ✈️", "Understanding the human body 🧬", "Building bridges & skyscrapers 🏗️"]
 )
 
-# Question 2 - st.multiselect (#NEW)
+# Question 2
+#NEW
 q2 = st.multiselect(
     "2. Which of these subjects do you enjoy the most? (Pick all that apply)",
-    ["Math ➗", "Physics ⚛️", "Biology 🧪", "Art & Design 🎨", "Economics 💰"]
+    ["Math ➗", "Physics ⚛️", "Biology 🧪", "Art/Design 🎨", "Economics 💰"]
 )
 
-# Question 3 - st.number_input (#NEW)
+# Question 3
+#NEW
 q3 = st.number_input(
     "3. How many hours per week would you ideally spend coding?",
     min_value=0, max_value=60, value=10
 )
 
-# Question 4 - st.slider (#NEW)
+# Question 4
+#NEW
 q4 = st.slider(
     "4. How much do you enjoy teamwork vs. solo work? (0 = solo, 10 = teamwork)",
     min_value=0, max_value=10, value=5
 )
 
-# Question 5 - Image Choice
+# Question 5
 st.write("5. Which campus spot would you hang out at the most?")
 col1, col2, col3 = st.columns(3)
 
@@ -127,7 +131,7 @@ with col3:
 
 q5 = st.radio("Pick your favorite spot:", [spot1, spot2, spot3])
 
-#Quiz Result
+#Result
 st.write("---")
 if st.button("See My GT Major 🐝"):  # NEW
     if "Coding puzzles 💻" in q1 or "Math ➗" in q2 or q3 > 20:
@@ -149,5 +153,6 @@ if st.button("See My GT Major 🐝"):  # NEW
     st.subheader(f"Your GT Major is: {major} 🎓")
     st.success(desc)
 
-    # Celebration balloons (#NEW)
+    # Balloons
+    #NEW
     st.balloons()
