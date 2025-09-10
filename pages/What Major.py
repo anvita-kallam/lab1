@@ -84,7 +84,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 st.title("🐝🎓 What Georgia Tech Major Should You Study?")
-st.write("Georgia Tech offers 35 undergraduate majors across its six colleges: Business, Computing, Design, Engineering, Liberal Arts, and Sciences. With this much choice, it's extremely difficult for students to narrow down what major is best for them.")
+st.header("Georgia Tech offers 35 undergraduate majors across its six colleges: Business, Computing, Design, Engineering, Liberal Arts, and Sciences. With this much choice, it's extremely difficult for students to narrow down what major is best for them.")
 st.write("But don't worry! This simple quiz will help you (yes you) finally decide what you want to study!")
 
 # Question 1
