@@ -109,7 +109,7 @@ st.markdown("""
 Navigate between the pages using the sidebar to the left. Here's what you'll find:
 
 1. **Portfolio**: Covers all things about me! Tap around to see what projects and experiences I've been up to.
-2. **What Major**: Deciding you major at a school with 35+ offerings across 6 colleges may seem impossible, but this quiz condenses down all the hard decision-making for you!
+2. **What Major**: Deciding your major at a school with 35+ offerings across 6 colleges may seem impossible, but this quiz condenses down all the hard decision-making for you!
 
 """)
 
